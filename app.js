@@ -103,11 +103,11 @@ $(document).ready(function () {
 			$("<span/>", {
 
 			}).append($("<img/>", {
-				"src": "images/types/" + pokemonType[i] + ".png"
+				"src": "image/types/" + pokemonType[i] + ".png"
 			}))
 			.appendTo($pokemonType);
 		}
-		$pokemonImage.attr("src", "images/pokemons/" + pokemonName + ".png");
+		$pokemonImage.attr("src", "image/pokemons/" + pokemonName + ".png");
 		var pokemonAbilities = pokemon[currentPokemonNumber].abilities;
 		for (let i = 0; i < pokemonAbilities.length; i++) {
 			$("<span/>", {
@@ -134,15 +134,15 @@ $(document).ready(function () {
 		var evolution = pokemon[currentPokemonNumber].evolution;
 		$("#evolution-first-stage-pokemon-number").text(evolution.firstStage.split("~")[0]);
 		$("#evolution-first-stage-pokemon-name").text(evolution.firstStage.split("~")[1]);
-		$("#evolution-first-stage-pokemon-image img").attr("src", "images/pokemons/" + evolution.firstStage.split("~")[1] + ".png");
+		$("#evolution-first-stage-pokemon-image img").attr("src", "image/pokemons/" + evolution.firstStage.split("~")[1] + ".png");
 		$("#evolution-second-stage-pokemon-number").text(evolution.secondStage.split("~")[0]);
 		$("#evolution-second-stage-pokemon-name").text(evolution.secondStage.split("~")[1]);
-		$("#evolution-second-stage-pokemon-image img").attr("src", "images/pokemons/" + evolution.secondStage.split("~")[1] + ".png");
+		$("#evolution-second-stage-pokemon-image img").attr("src", "image/pokemons/" + evolution.secondStage.split("~")[1] + ".png");
 		if (evolution.thirdStage) {
 			$("#evolution-third-stage-pokemon-number").text(evolution.thirdStage.split("~")[0]);
 			$("#evolution-third-stage-pokemon-name").text(evolution.thirdStage.split("~")[1]);
 			$("#evolution-third-stage-pokemon-image").children().css("visibility", "visible");
-			$("#evolution-third-stage-pokemon-image img").attr("src", "images/pokemons/" + evolution.thirdStage.split("~")[1] + ".png");
+			$("#evolution-third-stage-pokemon-image img").attr("src", "image/pokemons/" + evolution.thirdStage.split("~")[1] + ".png");
 		}
 		else {
 			$("#evolution-third-stage-pokemon-number").text("");
