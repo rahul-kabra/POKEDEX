@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./pokedex.css">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+	<title>POKEDEX</title>
+	<link rel="icon" href="favicon.png" type="./image/png">
+</head>
+
+<body>
+	<div id="main-container">
+		<div id="site-name-container">
+			<label>POKEDEX</label>
+			<div id="site-desc-container">
+				<label>Gotta Catch 'Em All</label>
+			</div>
+		</div>
+
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<div id="more-info-container" class="toggle-more-info">
+			<p><span class="fa fa-info-circle" style="cursor:pointer;"></span></p>
+		</div>
+		<div></div>
+
+		<div id="pokemon-name-container">
+			<p id="pokemon-number-container"></p>
+			<p id="pokemon-name-label">
+			</p>
+		</div>
+
+		<div id="pokemon-image-container">
+			<img id="pokemon-image" />
+		</div>
+
+		<div id="pokemon-desc-container">
+			<p id="pokemon-type-container">
+			</p>
+			<label></label>
+			<p style="font-size:15px;font-weight:bold;">
+				<span id="pokemon-weight-container"></span>
+				<span> | </span>
+				<span id="pokemon-height-container"></span>
+				<span> | </span>
+				<span id="pokemon-gender-female-container" class="fa fa-venus"></span>
+				<span id="pokemon-gender-male-container" class="fa fa-mars"></span>
+			</p>
+		</div>
+
+		<div id="pokemon-category-type-container">
+			<div class="pokemon-badge">
+				<i><span id="pokemon-category"></span></i>
+			</div>
+		</div>
+
+		<div id="pokemon-stats-container" class="toggle">
+			<span style="color: #fff;"></span>
+			<div class="overLyingDiv reveal">
+				<div class="stats-label" data-title="POKEMON STATS"></div>
+			</div>
+			<div class="sliding">
+				<div id="stats">
+					<div>
+						<p>HP</p>
+						<p id="hp-stats"></p>
+					</div>
+					<div>
+						<p>ATTACK</p>
+						<p id="attack-stats"></p>
+					</div>
+					<div>
+						<p>DEFENSE</p>
+						<p id="defense-stats"></p>
+					</div>
+					<div>
+						<p>SP. DEFENSE</p>
+						<p id="sp-defense-stats"></p>
+					</div>
+					<div>
+						<p>SP. ATTACK</p>
+						<p id="sp-attack-stats"></p>
+					</div>
+					<div>
+						<p>SPEED</p>
+						<p id="speed-stats"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div></div>
+
+		<div id="pokemon-abilities-container">
+			<p id="abilities-container">
+			</p>
+			<span class="link left-link">
+				<span class="link-arrow">
+					<span></span>
+					<span></span>
+				</span>
+				<span class="link-line"></span>
+			</span>
+			<span class="link-text">Explore Other Pokemons</span>
+			<span class="link right-link">
+				<span class="link-arrow">
+					<span></span>
+					<span></span>
+				</span>
+				<span class="link-line"></span>
+			</span>
+		</div>
+
+		<div id="about-container" class="md-trigger" data-modal="modal-12" style="height: 98px; max-height: 98px;">
+			<p style="position: relative;top: 20%;">
+				<span style="cursor: pointer;">ABOUT</span>
+			</p>
+		</div>
+
+		<div class="md-modal md-effect-12">
+			<div class="md-content">
+				<h3 style="letter-spacing: 5px;">POKEDEX</h3>
+				<div>
+					<p>
+						This is a fun project built with the help of the fantastic PokeAPI. It is an inexhaustible list
+						of all the details corresponding to a Pokemon.
+					</p>
+					<p>
+						For any avid Pokemon follower, this is the go-to place. Stats, evolution, moves, abilities,
+						catgeory, type, you will find each and every tiny detail laid out for you.
+					</p>
+					<p>
+						So what are you waiting for? Jump right in because we,
+					</p>
+					<p>
+						Gotta Catch 'Em All
+					</p>
+					<button class="md-close">Close</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="md-overlay"></div>
+
+		<div style="height: 98px; max-height: 98px;"></div>
+		<div style="height: 98px; max-height: 98px;"></div>
+		<div style="height: 98px; max-height: 98px;"></div>
+
+		<div id="made-by-container" style="height: 98px; max-height: 98px;">
+			<p style="position: relative;top: 25%;">
+				<span>DESIGNED AND BUILT BY</span>
+				<a href="https://github.com/rahul-kabra"><span>RAHUL KABRA</span></a>
+			</p>
+		</div>
+
+		<div id="github-link-container" style="height: 98px; max-height: 98px; background: transparent !important;">
+			<p style="position: relative;top: 20%;">
+				<a href="https://github.com/rahul-kabra/POKEDEX">
+					<span style="padding-right:5px;">FORK ON GITHUB </span>
+					<span class="fa fa-github"></span>
+				</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="overlay-more-info" id="overlay-more-info">
+		<nav class="overlay-more-info-menu">
+			<p style="color:#fff;">Find out more about the moves and evolution of a Pokemon here</p>
+			<div id="overlay-details-container"
+				style="position: relative;display: grid; grid-template-columns: 1fr 1fr">
+
+				<div class="section">
+					<p>This is a list of moves performed by <span id="current-pokemon-move"></span></p>
+					<div id="pokemon-moves-container">
+						<div class="move-item">
+							<p id="move-1"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-2"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-3"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-4"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-5"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-6"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-7"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-8"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-9"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-10"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-11"></p>
+						</div>
+						<div class="move-item">
+							<p id="move-12"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-wrapper section">
+					<div class="first">
+						<div class="front">
+							<div class="wrap">
+								<p style="font-size: 20px;">This is the evolution of <span id="current-pokemon"></span>
+								</p>
+								<button class="openEvolutionCard">Read More...</button>
+							</div>
+						</div>
+						<div class="back">
+							<div>
+								<p id="evolution-first-stage-pokemon-number"></p>
+								<p id="evolution-first-stage-pokemon-name"></p>
+								<p id="evolution-first-stage-pokemon-image"><img /></p>
+							</div>
+						</div>
+					</div>
+					<div class="second">
+						<div>
+							<p id="evolution-second-stage-pokemon-number"></p>
+							<p id="evolution-second-stage-pokemon-name"></p>
+							<p id="evolution-second-stage-pokemon-image"><img /></p>
+						</div>
+					</div>
+					<div class="third">
+						<div>
+							<p id="evolution-third-stage-pokemon-number"></p>
+							<p id="evolution-third-stage-pokemon-name"></p>
+							<p id="evolution-third-stage-pokemon-image"><img /></p>
+						</div>
+						<button class="closeEvolutionCard">✕</button>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</div>
+
+	<div class="page-transition-loader">
+		<div class="page-transition-loader-icon">
+			<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px"
+				viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+				<path opacity="0.2" fill="#000"
+					d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z">
+				</path>
+				<path fill="#000"
+					d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z">
+				</path>
+				<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20"
+					to="360 20 20" dur="0.5s" repeatCount="indefinite"></animateTransform>
+			</svg>
+		</div>
+		<div class="page-transition-loader-tile"></div>
+		<div class="page-transition-loader-tile"></div>
+		<div class="page-transition-loader-tile"></div>
+		<div class="page-transition-loader-tile"></div>
+		<div class="page-transition-loader-tile"></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="./data.js"></script>
+	<script src="./pokedex.js"></script>
+</body>
+
+</html>
