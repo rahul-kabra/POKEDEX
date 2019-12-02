@@ -8,8 +8,8 @@ body {
 
 #main-container {
   display: grid;
-  grid-template-columns: repeat(10, minmax(133.3px, auto));
-  grid-template-rows: repeat(5, minmax(98px, auto));
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, minmax(98px, 98px));
 }
 
 #site-name-container {
@@ -919,4 +919,515 @@ i span {
 
 .wrap {
   padding: 130px 0;
+}
+
+/*RESPONSIVE CSS STYLES*/
+@media screen and (max-width: 414px) {
+  #site-name-container {
+    grid-area: 1/1/2/10 !important;
+  }
+
+  #more-info-container {
+    grid-area: 1/1/10/11 !important;
+    position: relative;
+    top: 0 !important;
+  }
+
+  #pokemon-name-container {
+    grid-area: 2/2/3/10 !important;
+    max-width: none !important;
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+
+  #pokemon-image-container {
+    grid-area: 3/3/6/11 !important;
+    align-self: center !important;
+  }
+
+  #pokemon-image-container img {
+    width: 85% !important;
+  }
+
+  #pokemon-category-type-container {
+    grid-area: 3/1/6/4 !important;
+  }
+
+  #pokemon-desc-container {
+    grid-area: 6/1/9/11 !important;
+    justify-self: start !important;
+    max-width: none !important;
+    text-align: inherit !important;
+  }
+
+  #pokemon-desc-container img {
+    width: 7% !important;
+  }
+
+  #pokemon-stats-container {
+    grid-area: 9/1/11/4 !important;
+    justify-self: baseline !important;
+  }
+
+  #pokemon-abilities-container {
+    grid-area: 9/5/11/11 !important;
+    align-self: center !important;
+    padding: 5px !important;
+    font-size: 9px !important;
+    justify-self: center !important;
+  }
+
+  #about-container {
+    grid-area: 11/1/12/5 !important;
+    font-size: 20px !important;
+    text-align: left !important;
+    padding: 5px 5px 5px 20px !important;
+  }
+
+  #made-by-container {
+    grid-area: 12/1/12/11 !important;
+    font-size: 17px !important;
+    padding: 0px !important;
+  }
+
+  #github-link-container {
+    grid-area: 11/5/12/11 !important;
+    font-size: 20px !important;
+    padding: 5px !important;
+  }
+
+  #main-container {
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr) !important;
+  }
+
+  .link-text {
+    font-size: 8px !important;
+    position: relative !important;
+    top: 1.5px !important;
+  }
+
+  .link {
+    padding: 0 !important;
+  }
+
+  .link-line {
+    width: 20px !important;
+  }
+
+  .stats-label {
+    font-size: 11px !important;
+    position: relative;
+    top: 40% !important;
+  }
+
+  #stats {
+    font-size: 9px !important;
+    padding: 5px !important;
+  }
+
+  .md-overlay {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .md-show.md-effect-12 .md-content {
+    font-size: 14px !important;
+  }
+
+  .md-modal {
+    top: 20% !important;
+  }
+
+  .overlay-more-info nav {
+    font-size: 15px;
+  }
+
+  .overlay-more-info.open p {
+    font-size: 13px;
+    padding-top: 12px;
+  }
+
+  #overlay-details-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .wrap {
+    padding: 45px 0;
+  }
+
+  .wrap p {
+    font-size: 13px !important;
+  }
+
+  .first,
+  .second,
+  .third {
+    height: 250px;
+  }
+
+  .closeEvolutionCard {
+    height: 25px;
+    width: 25px;
+  }
+
+  .move-item {
+    width: 54px !important;
+    height: 75px !important;
+  }
+
+  .move-item p {
+    padding: 5px !important;
+    font-size: 8px !important;
+  }
+
+  #pokemon-moves-container {
+    padding: 5px 25px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  #site-name-container {
+    grid-area: 1/1/2/10 !important;
+  }
+
+  #more-info-container {
+    grid-area: 1/1/10/11 !important;
+    position: relative;
+    top: 0 !important;
+  }
+
+  #pokemon-name-container {
+    grid-area: 2/2/3/10 !important;
+    max-width: none !important;
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+
+  #pokemon-image-container {
+    grid-area: 3/3/6/11 !important;
+    align-self: center !important;
+  }
+
+  #pokemon-image-container img {
+    width: 85% !important;
+  }
+
+  #pokemon-category-type-container {
+    grid-area: 3/1/6/4 !important;
+  }
+
+  #pokemon-desc-container {
+    grid-area: 6/1/9/11 !important;
+    justify-self: start !important;
+    max-width: none !important;
+    text-align: inherit !important;
+  }
+
+  #pokemon-desc-container img {
+    width: 7% !important;
+  }
+
+  #pokemon-stats-container {
+    grid-area: 9/1/11/5 !important;
+    justify-self: center !important;
+  }
+
+  #pokemon-abilities-container {
+    grid-area: 9/5/11/11 !important;
+    align-self: center !important;
+    padding: 10px !important;
+    font-size: 13px !important;
+    justify-self: center !important;
+  }
+
+  #about-container {
+    grid-area: 11/1/12/5 !important;
+    font-size: 20px !important;
+    text-align: left !important;
+    padding: 5px 5px 5px 20px !important;
+  }
+
+  #made-by-container {
+    grid-area: 12/1/12/11 !important;
+    font-size: 17px !important;
+    padding: 0px !important;
+  }
+
+  #github-link-container {
+    grid-area: 11/5/12/11 !important;
+    font-size: 20px !important;
+    padding: 5px 20px 5px 5px !important;
+  }
+
+  #main-container {
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr) !important;
+  }
+
+  .link-text {
+    font-size: 12px !important;
+    position: relative !important;
+    top: 3px !important;
+  }
+
+  .link {
+    padding: 0 !important;
+  }
+
+  .link-line {
+    width: 30px !important;
+  }
+
+  .stats-label {
+    font-size: 15px !important;
+    position: relative;
+    top: 40% !important;
+  }
+
+  #stats {
+    font-size: 13px !important;
+    padding: 10px !important;
+  }
+
+  .md-overlay {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .md-show.md-effect-12 .md-content {
+    font-size: 13px !important;
+  }
+
+  .md-modal {
+    top: 10% !important;
+  }
+
+  .overlay-more-info nav {
+    font-size: 15px;
+  }
+
+  .overlay-more-info.open p {
+    font-size: 13px;
+    padding-top: 12px;
+  }
+
+  #overlay-details-container {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .wrap {
+    padding: 45px 0;
+  }
+
+  .wrap p {
+    font-size: 13px !important;
+  }
+
+  .first,
+  .second,
+  .third {
+    height: 250px;
+  }
+
+  .closeEvolutionCard {
+    height: 25px;
+    width: 25px;
+  }
+
+  .move-item {
+    width: 54px !important;
+    height: 75px !important;
+  }
+
+  .move-item p {
+    padding: 5px !important;
+    font-size: 8px !important;
+  }
+
+  #pokemon-moves-container {
+    padding: 5px 25px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #site-name-container {
+    grid-area: 1/1/2/10 !important;
+  }
+
+  #more-info-container {
+    grid-area: 1/1/10/11 !important;
+    position: relative;
+    top: 0 !important;
+  }
+
+  #pokemon-name-container {
+    grid-area: 2/2/3/10 !important;
+    max-width: none !important;
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+
+  #pokemon-image-container {
+    grid-area: 3/3/6/11 !important;
+    align-self: center !important;
+  }
+
+  #pokemon-image-container img {
+    width: 85% !important;
+  }
+
+  #pokemon-category-type-container {
+    grid-area: 3/1/6/4 !important;
+  }
+
+  #pokemon-desc-container {
+    grid-area: 6/1/9/11 !important;
+    justify-self: start !important;
+    max-width: none !important;
+    text-align: inherit !important;
+  }
+
+  #pokemon-desc-container img {
+    width: 7% !important;
+  }
+
+  #pokemon-stats-container {
+    grid-area: 9/1/11/5 !important;
+    justify-self: center !important;
+  }
+
+  #pokemon-abilities-container {
+    grid-area: 9/5/11/11 !important;
+    align-self: center !important;
+    padding: 10px !important;
+    font-size: 15px !important;
+    justify-self: center !important;
+  }
+
+  #about-container {
+    grid-area: 11/1/12/5 !important;
+    font-size: 20px !important;
+    text-align: left !important;
+    padding: 5px 5px 5px 20px !important;
+  }
+
+  #made-by-container {
+    grid-area: 12/1/12/11 !important;
+    font-size: 17px !important;
+    padding: 0px !important;
+  }
+
+  #github-link-container {
+    grid-area: 11/5/12/11 !important;
+    font-size: 20px !important;
+    padding: 5px 20px 5px 5px !important;
+  }
+
+  #main-container {
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr) !important;
+  }
+
+  .link-text {
+    font-size: 13px !important;
+    position: relative !important;
+    top: 3px !important;
+  }
+
+  .link {
+    padding: 0 !important;
+  }
+
+  .link-line {
+    width: 30px !important;
+  }
+
+  .stats-label {
+    font-size: 18px !important;
+    position: relative;
+    top: 40% !important;
+  }
+
+  #stats {
+    font-size: 13px !important;
+    padding: 10px !important;
+  }
+
+  .md-overlay {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .md-show.md-effect-12 .md-content {
+    font-size: 13px !important;
+  }
+
+  .md-modal {
+    top: 10% !important;
+  }
+
+  .overlay-more-info nav {
+    font-size: 15px;
+  }
+
+  .overlay-more-info.open p {
+    font-size: 13px;
+    padding-top: 12px;
+  }
+
+  #overlay-details-container {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .wrap {
+    padding: 45px 0;
+  }
+
+  .wrap p {
+    font-size: 13px !important;
+  }
+
+  .first,
+  .second,
+  .third {
+    height: 250px;
+  }
+
+  .closeEvolutionCard {
+    height: 25px;
+    width: 25px;
+  }
+
+  .move-item {
+    width: 54px !important;
+    height: 75px !important;
+  }
+
+  .move-item p {
+    padding: 5px !important;
+    font-size: 8px !important;
+  }
+
+  #pokemon-moves-container {
+    padding: 5px 25px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1034px) {
+  #pokemon-name-container {
+    font-size: 48px !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1150px) {
+  .link-text {
+    font-size: 14px !important;
+  }
 }
